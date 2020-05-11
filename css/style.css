@@ -1,0 +1,262 @@
+/*------Color---------
+#212121 - Dark 
+#323232 - Lighter Dark 
+#0d7377 - Dark Blueish
+#00adb5 - Light Blueish
+#dbdbdb - Light Gray
+#979797 - Dark Gray
+*/
+
+/*--------Font--------*/
+
+@font-face {
+    font-family: Hand;
+    src: url(font/Yesteryear-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: Peace;
+    src: url(font/Peace\ Sans\ Webfont.ttf) format("truetype");
+}
+/*--------Resuable--------*/
+
+hr {
+    color: #0d7377;
+    border-top: 7px dotted;
+    width: 15%;
+    margin: 5% auto;
+}
+
+p {
+    color: #d6d6d6;
+}
+/*--------Hero--------*/
+
+.hero-container {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/matthias-oberholzer-jC9yDaQJolo-unsplash.jpg);
+    height: 100%;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-text {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/*--------Headings--------*/
+
+h1 {
+    font-size: 7em;
+    font-family: "Hand";
+}
+
+h2 {
+    font-size: 3em;
+    color: #979797;
+    font-family: 'Peace';
+}
+
+.hero-text h2 {
+    font-family: Hand;
+}
+
+/*--------About Me--------*/
+
+.about-me {
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/2.png);*/
+    height: 100%;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.about-me img {
+    height: 140px;
+    width: 140px;
+}
+
+/*--------Projects--------*/
+
+.Project {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #dbdbdb;
+}
+
+.Project .P,
+.Project .P1,
+.Project .P2,
+.Project .P3 {
+    height: 100%;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.Project .P{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(img/8.png);
+}
+
+.Project .P1{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(img/9.png);
+}
+
+.Project .P2{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(img/2.png);
+}
+
+.Project .P3{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(img/4.png);
+}
+
+/*--------Expiernce--------*/
+
+.experience {
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(img/—Pngtree—abstract\ 80s\ trendy\ geometric\ background_1157555.png);
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: fixed;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.work,
+.edu {
+    margin: 5%;
+}
+
+.experience h2{
+    font-family: 'Peace';
+}
+
+/*--------Contact--------*/
+
+.contact-me {
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(img/—Pngtree—cool\ background\ with\ geometric\ 80s_1157575.png);
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact-me h1,
+.contact-me h2 {
+    font-family: 'Peace';
+    text-align: center;
+}
+
+.contact-me h1 {
+    color:#dbdbdb;
+}
+
+.contact-me h2 {
+    color: #979797;
+}
+.contact-me .icons {
+    font-size: 50px;
+    color: #979797;
+}
+
+.icons .face,
+.icons .insta,
+.icons .linkd {
+     transition: color 0.6s;
+    
+}
+.icons .face:hover {
+    color: #3b5998;
+}
+.icons .insta:hover {
+    color: #C13584;
+}
+
+.icons .linkd:hover {
+    color: #00a0dc;
+}
+/*--------Query---------*/
+
+@media only screen and (max-width: 750px) {
+    h1 {
+        font-size: 5em;
+    }
+    h2 {
+        font-size: 2.5em;
+    }
+    .about-me img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    h1 {
+        font-size: 4em;
+    }
+    .about-me img {
+        width: 110px;
+        height: 110px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    h1 {
+        font-size: 3em;
+    }
+    h2 {
+        font-size: 2em;
+    }
+    .about-me img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    h1 {
+        font-size: 2.5em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    .about-me img {
+        width: 80px;
+        height: 80px;
+    }
+    p {
+        font-size: 12px;
+    }
+}
